@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=16scFxoxQDKMuRBqNBwnGdyEt927y4WWwzakDZ0b&fuel_type=ELEC,LPG&location=60073&radius=6.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 18 Apr 2016 15:44:12 GMT
+      Last-Modified:
+      - Mon, 18 Apr 2016 15:44:12 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '995'
+      X-Request-Id:
+      - cf7f1643-7950-4f5a-9251-86a498c0bca0
+      X-Runtime:
+      - '0.011027'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":42.3612999,"longitude":-88.0899304,"precision":{"name":"postal_code","types":["postal_code"],"value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":7,"station_counts":{"total":10,"fuels":{"E85":{"total":0},"ELEC":{"total":8,"stations":{"total":5}},"HY":{"total":0},"LNG":{"total":0},"BD":{"total":0},"CNG":{"total":0},"LPG":{"total":2}}},"offset":0,"fuel_stations":[{"access_days_time":"8am-5pm
+        M-F, 8am-12pm Sat","cards_accepted":"Cash D M V","date_last_confirmed":"2015-11-03","expected_date":null,"fuel_type_code":"LPG","id":21207,"groups_with_access_code":"Public
+        - Call ahead","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"Hicksgas","station_phone":"847-356-8225","updated_at":"2016-01-13T18:00:20Z","geocode_status":"200-8","latitude":42.416261,"longitude":-88.078478,"city":"Lake
+        Villa","intersection_directions":"Next to tracks","plus4":null,"state":"IL","street_address":"200
+        E Grand Ave","zip":"60046","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":false,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":3.83854},{"access_days_time":"6:30am-10pm
+        M-Sat, 8am-8pm Sun","cards_accepted":"A Checks Cash D M V","date_last_confirmed":"2015-11-03","expected_date":null,"fuel_type_code":"LPG","id":50497,"groups_with_access_code":"Public","open_date":null,"owner_type_code":"P","status_code":"E","station_name":"Menards","station_phone":"847-973-3050","updated_at":"2016-04-08T12:39:15Z","geocode_status":"GPS","latitude":42.364053,"longitude":-88.171275,"city":"Fox
+        Lake","intersection_directions":null,"plus4":null,"state":"IL","street_address":"1400
+        S US Highway 12","zip":"60020","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":null,"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":true,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.16818},{"access_days_time":"Service
+        center use only","cards_accepted":null,"date_last_confirmed":"2015-11-03","expected_date":null,"fuel_type_code":"ELEC","id":70471,"groups_with_access_code":"Private","open_date":"2011-08-29","owner_type_code":"P","status_code":"E","station_name":"Zeigler
+        Nissan","station_phone":"847-264-4572","updated_at":"2016-01-13T18:00:32Z","geocode_status":"200-8","latitude":42.386942,"longitude":-88.0003053,"city":"Lake
+        Villa","intersection_directions":null,"plus4":null,"state":"IL","street_address":"18850
+        W Grand Ave","zip":"60046","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.91649},{"access_days_time":"Delaership
+        business hours","cards_accepted":null,"date_last_confirmed":"2015-11-03","expected_date":null,"fuel_type_code":"ELEC","id":70446,"groups_with_access_code":"Public
+        - Call ahead","open_date":"2011-08-29","owner_type_code":"P","status_code":"E","station_name":"Zeigler
+        Nissan","station_phone":"847-264-4572","updated_at":"2016-01-13T18:00:32Z","geocode_status":"200-8","latitude":42.386942,"longitude":-88.0003053,"city":"Lake
+        Villa","intersection_directions":null,"plus4":null,"state":"IL","street_address":"18850
+        W Grand Ave","zip":"60046","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":4.91649},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-04-18","expected_date":null,"fuel_type_code":"ELEC","id":65779,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"ZEIGLER  NISSAN","station_phone":"888-758-4389","updated_at":"2016-04-18T08:17:28Z","geocode_status":"GPS","latitude":42.3869571,"longitude":-88.0000714,"city":"Lake
+        Villa","intersection_directions":"QUICK CHARGER 1; -","plus4":null,"state":"IL","street_address":"18850
+        W Grand Ave","zip":"60046","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["CHADEMO"],"ev_dc_fast_num":1,"ev_level1_evse_num":null,"ev_level2_evse_num":null,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.mychargepoint.net/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:99109"]},"distance":4.92803},{"access_days_time":"ComEd
+        fleet use only","cards_accepted":null,"date_last_confirmed":"2016-03-07","expected_date":null,"fuel_type_code":"ELEC","id":73384,"groups_with_access_code":"Private","open_date":"2016-01-05","owner_type_code":"T","status_code":"E","station_name":"ComEd","station_phone":"630-576-6223","updated_at":"2016-03-07T22:18:45Z","geocode_status":"200-8","latitude":42.3025,"longitude":-88.007327,"city":"Libertyville","intersection_directions":null,"plus4":null,"state":"IL","street_address":"1500
+        Franklin Blvd","zip":"60048","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":4,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":5.86234},{"access_days_time":"8am-5pm
+        daily; mainly for employee use","cards_accepted":null,"date_last_confirmed":"2016-03-07","expected_date":null,"fuel_type_code":"ELEC","id":73395,"groups_with_access_code":"Public
+        - Call ahead","open_date":"2013-01-04","owner_type_code":"T","status_code":"E","station_name":"ComEd","station_phone":"630-576-6223","updated_at":"2016-03-07T22:18:45Z","geocode_status":"200-8","latitude":42.3025,"longitude":-88.007327,"city":"Libertyville","intersection_directions":null,"plus4":null,"state":"IL","street_address":"1500
+        Franklin Blvd","zip":"60048","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":5.86234}]}'
+    http_version: 
+  recorded_at: Mon, 18 Apr 2016 15:44:11 GMT
+recorded_with: VCR 3.0.1
