@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=16scFxoxQDKMuRBqNBwnGdyEt927y4WWwzakDZ0b&fuel_type=ELEC,LPG&limit=10&location=80203&radius=6.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 18 Apr 2016 16:27:51 GMT
+      Last-Modified:
+      - Mon, 18 Apr 2016 16:27:51 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Cache:
+      - MISS
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '996'
+      X-Request-Id:
+      - 960287b7-83e1-4a3c-b914-1c40f4cfcfdd
+      X-Runtime:
+      - '0.011774'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.7312095,"longitude":-104.9826965,"precision":{"name":"postal_code","types":["postal_code"],"value":5},"station_locator_url":"http://www.afdc.energy.gov/afdc/locator/stations/","total_results":56,"station_counts":{"total":110,"fuels":{"E85":{"total":0},"ELEC":{"total":102,"stations":{"total":48}},"HY":{"total":0},"LNG":{"total":0},"BD":{"total":0},"CNG":{"total":0},"LPG":{"total":8}}},"offset":0,"fuel_stations":[{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-04-18","expected_date":null,"fuel_type_code":"ELEC","id":66897,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"UDR","station_phone":"888-758-4389","updated_at":"2016-04-18T08:00:26Z","geocode_status":"GPS","latitude":39.7300224,"longitude":-104.9883424,"city":"Denver","intersection_directions":"816
+        ACOMA 1; For residents only - 5th Floor","plus4":null,"state":"CO","street_address":"800
+        Acoma St","zip":"80204","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.mychargepoint.net/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:118249"]},"distance":0.3117},{"access_days_time":"Garage
+        business hours; pay lot","cards_accepted":null,"date_last_confirmed":"2015-11-03","expected_date":null,"fuel_type_code":"ELEC","id":50065,"groups_with_access_code":"Public","open_date":"2012-12-01","owner_type_code":"LG","status_code":"E","station_name":"Cultural
+        Center Complex Garage","station_phone":"303-640-1096","updated_at":"2016-01-13T18:00:36Z","geocode_status":"200-8","latitude":39.735271,"longitude":-104.9885199,"city":"Denver","intersection_directions":"Located
+        on level 3 by the elevator","plus4":null,"state":"CO","street_address":"65
+        W 12th Ave","zip":"80204","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772","CHADEMO"],"ev_dc_fast_num":1,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.41801},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-04-18","expected_date":null,"fuel_type_code":"ELEC","id":62140,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"CADACHARGEPOINT","station_phone":"888-758-4389","updated_at":"2016-04-18T08:16:10Z","geocode_status":"200-9","latitude":39.7232935,"longitude":-104.9841662,"city":"Denver","intersection_directions":"CADA
+        FRONT 1\nCADA CARPORT 1","plus4":null,"state":"CO","street_address":"290 E
+        Speer Blvd","zip":"80203","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":4,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.mychargepoint.net/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:100547","1:102063"]},"distance":0.55171},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-04-18","expected_date":null,"fuel_type_code":"ELEC","id":53942,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"PUBLIC
+        STATIONS","station_phone":"888-758-4389","updated_at":"2016-04-18T08:29:49Z","geocode_status":"GPS","latitude":39.7376694,"longitude":-104.9904124,"city":"Denver","intersection_directions":"BANNOCK
+        LOT 1; -","plus4":null,"state":"CO","street_address":"1345 Bannock St","zip":"80204","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.mychargepoint.net/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:74433"]},"distance":0.60625},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-04-18","expected_date":null,"fuel_type_code":"ELEC","id":65434,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"PUBLIC
+        STATIONS","station_phone":"888-758-4389","updated_at":"2016-04-18T08:29:50Z","geocode_status":"GPS","latitude":39.737921,"longitude":-104.9940067,"city":"Denver","intersection_directions":"JUSTICE
+        CENTER; Adjacent to space 32 on level 2","plus4":null,"state":"CO","street_address":"1370
+        Elati St","zip":"80204","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.mychargepoint.net/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:74363"]},"distance":0.75983},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2015-11-03","expected_date":null,"fuel_type_code":"ELEC","id":53945,"groups_with_access_code":"Public","open_date":"2013-06-01","owner_type_code":"LG","status_code":"E","station_name":"Denver
+        Justice Center Garage","station_phone":"303-607-9093  720-913-1750","updated_at":"2016-01-13T17:54:08Z","geocode_status":"200-8","latitude":39.738334,"longitude":-104.9937917,"city":"Denver","intersection_directions":"Level
+        2, at the top of the entrance ramp, SW corner","plus4":null,"state":"CO","street_address":"490
+        W 14th Ave","zip":"80204","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.76868},{"access_days_time":"24
+        hours daily; pay lot","cards_accepted":null,"date_last_confirmed":"2015-11-03","expected_date":null,"fuel_type_code":"ELEC","id":43833,"groups_with_access_code":"Public","open_date":"2011-02-28","owner_type_code":"P","status_code":"E","station_name":"Tremont
+        Street Garage","station_phone":"303-534-7559","updated_at":"2016-01-13T18:00:17Z","geocode_status":"200-8","latitude":39.742113,"longitude":-104.991416,"city":"Denver","intersection_directions":null,"plus4":null,"state":"CO","street_address":"400
+        15th St","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA515","J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":2,"ev_level2_evse_num":2,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":0.88406},{"access_days_time":"24
+        hours daily; pay lot","cards_accepted":null,"date_last_confirmed":"2015-12-02","expected_date":null,"fuel_type_code":"ELEC","id":36353,"groups_with_access_code":"Public","open_date":"2010-03-15","owner_type_code":"P","status_code":"E","station_name":"Hyatt
+        Regency Denver","station_phone":"303-486-4467","updated_at":"2016-01-13T18:00:43Z","geocode_status":"200-8","latitude":39.7439318,"longitude":-104.992985,"city":"Denver","intersection_directions":"At
+        Colorado Convention Center, level 2","plus4":null,"state":"CO","street_address":"650
+        15th St","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["NEMA520"],"ev_dc_fast_num":null,"ev_level1_evse_num":4,"ev_level2_evse_num":null,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":1.03475},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2015-11-03","expected_date":null,"fuel_type_code":"ELEC","id":53944,"groups_with_access_code":"Public","open_date":"2013-06-01","owner_type_code":"LG","status_code":"E","station_name":"Colorado
+        Convention Center Garage","station_phone":"303-228-8071  720-913-1750","updated_at":"2016-01-13T18:00:37Z","geocode_status":"GPS","latitude":39.742308,"longitude":-104.997556,"city":"Denver","intersection_directions":"Parking
+        space 1081. Level P-1, half way down the level near the freight elevator","plus4":null,"state":"CO","street_address":"1104
+        Champa St","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":null,"ev_network_web":null,"ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"distance":1.10124},{"access_days_time":"24
+        hours daily","cards_accepted":null,"date_last_confirmed":"2016-04-18","expected_date":null,"fuel_type_code":"ELEC","id":65432,"groups_with_access_code":"Public","open_date":null,"owner_type_code":null,"status_code":"E","station_name":"PUBLIC
+        STATIONS","station_phone":"888-758-4389","updated_at":"2016-04-18T08:29:52Z","geocode_status":"GPS","latitude":39.7431367,"longitude":-104.9974677,"city":"Denver","intersection_directions":"CONVENTION
+        CTR; Enter garage off Speer before Champa. Located in space 1081 on Level
+        1","plus4":null,"state":"CO","street_address":"1286-1296 Stout St","zip":"80202","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":1,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.mychargepoint.net/","ev_other_evse":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:74153"]},"distance":1.13847}]}'
+    http_version: 
+  recorded_at: Mon, 18 Apr 2016 16:27:51 GMT
+recorded_with: VCR 3.0.1
