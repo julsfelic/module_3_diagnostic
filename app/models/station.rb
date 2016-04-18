@@ -6,10 +6,10 @@ class Station
               :distance
 
   def initialize(data)
-    @name = data..
-    @address = data
-    @hours = data..hours
-    @type = data..type
+    @name = data[:station_name]
+    @address = data[:street_address]
+    @hours = data[:access_days_time]
+    @type = data[:]
     @distance = data..distance
   end
 
@@ -21,6 +21,9 @@ class Station
       fuel_type: "ELEC,LPG",
       limit: "10"
     )
+    data[:fuel_stations].map do |station|
+      new(station)
+    end
 binding.pry
   end
 end
