@@ -11,12 +11,24 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "twitter-bootstrap-rails"
 gem "therubyracer"
 gem "less-rails"
+gem "figaro"
+gem "faraday"
 
 group :development, :test do
   gem 'byebug'
+  gem "rspec-rails", '~> 3.0'
+  gem "factory_girl_rails"
+  gem "pry-rails"
+end
+
+group :test do
+  gem "capybara"
+  gem "database_cleaner"
+  gem "shoulda-matchers", "~> 3.1"
+  gem "vcr"
+  gem "webmock"
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
 end
-
