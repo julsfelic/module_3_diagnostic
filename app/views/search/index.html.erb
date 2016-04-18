@@ -1,11 +1,11 @@
 <ul class="stations">
   <% @stations.each do |station| %>
     <li>
-      <%= station.name %>
-      <%= station.address %>
-      <%= station.hours %>
-      <%= station.type %>
-      <%= station.distance %>
+      <h1><%= station.name %></h1>
+      <h1><%= station.address %>, <%= station.city %>, <%= station.state %></h1>
+      <h1><%= station.hours %></h1>
+      <h1><%= station.type %></h1>
+      <h1><%= station.distance %> mi</h1>
     </li>
   <% end %>
 </ul>

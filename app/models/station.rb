@@ -1,6 +1,8 @@
 class Station
   attr_reader :name,
               :address,
+              :city,
+              :state,
               :hours,
               :type,
               :distance
@@ -8,9 +10,11 @@ class Station
   def initialize(data)
     @name = data[:station_name]
     @address = data[:street_address]
+    @state = data[:state]
+    @city = data[:city]
     @hours = data[:access_days_time]
-    @type = data[:]
-    @distance = data..distance
+    @type = data[:fuel_type_code]
+    @distance = data[:distance]
   end
 
   def self.find_by(zip_code)
@@ -24,6 +28,5 @@ class Station
     data[:fuel_stations].map do |station|
       new(station)
     end
-binding.pry
   end
 end
